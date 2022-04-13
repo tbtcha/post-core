@@ -1,4 +1,4 @@
-package dar.kz.academy.clientcoreapi.service;
+package dar.kz.academy.clientcoreapi.service.old;
 
 import dar.kz.academy.clientcoreapi.model.ClientModel;
 
