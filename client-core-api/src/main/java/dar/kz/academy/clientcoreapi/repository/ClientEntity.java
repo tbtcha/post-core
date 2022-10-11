@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
@@ -19,6 +16,7 @@ import javax.validation.constraints.NotNull;
 public class ClientEntity {
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue
     private Long id;
     @Column(name = "client_id", nullable = false, unique = true)
     private String clientId;

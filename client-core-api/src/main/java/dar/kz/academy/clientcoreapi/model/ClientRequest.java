@@ -11,7 +11,6 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @Data
 public class ClientRequest {
-    @NotNull
     private String clientId;
     @NotNull
     private String name;
